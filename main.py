@@ -22,6 +22,7 @@ def pull(arm):
   reward (float)
     Reward associated with pulling bandit arm. Drawn from a normal distribution,
     mean = the true value of the arm
+    
   """
   reward = np.random.default_rng().normal(loc=trueValues[arm])
   return reward
